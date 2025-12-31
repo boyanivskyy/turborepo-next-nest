@@ -1,0 +1,28 @@
+{
+	"name": "@repo/types",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"lint": "eslint . --max-warnings 0"
+	},
+	"exports": {
+		".": {
+			"types": "./src/index.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "*",
+		"@repo/eslint-config": "*",
+		"@types/node": "25.0.3",
+		"@types/eslint": "9.6.1",
+		"eslint": "9.39.2",
+		"typescript": "5.9.3"
+	}
+}
