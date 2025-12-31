@@ -9,6 +9,7 @@ export const Products = async () => {
 
 	return (
 		<div>
+			<h1>Products</h1>
 			{products.map((product: Product) => (
 				<div key={product.id}>
 					<p>Name: {product.name}</p>
